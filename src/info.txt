@@ -1,0 +1,17 @@
+create database BD;
+
+CREATE TABLE Person(
+id int AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(15),
+surname VARCHAR(15),
+birthDate VARCHAR(15)
+);
+
+INSERT INTO Person(name,surname,birthDate) VALUES ('Alex','Fosmov','20-05-1988');
+
+UPDATE Person SET name = 'imie', surname = 'nazwisko',birthDate = 'Rok_urodzenia' WHERE id = 1;
+
+========================
+
+1. Aplikacja kartoteki (bazy danych) "znajomych" osób. Zapis na dysk, odczyt z dysku,
+dodawanie osób, wyszukiwanie i przeglądanie osób.
